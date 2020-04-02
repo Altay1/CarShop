@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Car_Shop.Models.Repositories;
 
 namespace Car_Shop
 {
@@ -31,6 +32,11 @@ namespace Car_Shop
             services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+
+            services.AddScoped<IOrderDetailRepo, OrderDetailsRepo>();
+            services.AddScoped<IOrderRepo, OrderRepo>();
+            services.AddScoped<ICustomerRepo, CustomerRepo>();
+            services.AddScoped<IProductRepo, ProductRepo>();
 
 
             services.AddRazorPages();
