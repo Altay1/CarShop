@@ -53,8 +53,9 @@ namespace Car_Shop
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-           // app.UseSession();
+            // app.UseSession();
 
+            app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

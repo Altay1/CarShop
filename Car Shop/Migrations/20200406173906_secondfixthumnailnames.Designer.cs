@@ -4,14 +4,16 @@ using Car_Shop.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Car_Shop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200406173906_secondfixthumnailnames")]
+    partial class secondfixthumnailnames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -168,21 +170,21 @@ namespace Car_Shop.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            ImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/golfeorig.jpg",
+                            ImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/golfethumb.jpg",
                             LongDescription = "The Golf blue-e-motion concept has a range of 150 km (93 mi). Volkswagen scheduled a field testing program with 500 units to begin in 2011. The first 10 units began field testing in Wolfsburg in May 2011. A second batch of 80 test cars began testing in June 2011 in Berlin, Hannover and Wolfsburg. In February 2012, the first e-Golf, as the production version was renamed, was delivered in Belmont, California. A total of 20 e-Golfs will be allocated to the U.S. field testing program.",
                             Name = "Volkswagen Golf E",
-                            ShortDescription = "Volkswagen Golf is a compact car.",
-                            ThumbImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/golfethumb.jpg"
+                            ShortDescription = "Volkswagen Golf is a compact car produced by the German automotive manufacturer Volkswagen since 1974",
+                            ThumbImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/golfeorig.jpg"
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 1,
-                            ImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/teslamodelsorig.jpg",
+                            ImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/teslamodelsthumb.jpg",
                             LongDescription = "Model S cars built after October 2016 have a feature called Autopilot, which is an advanced driver assistance system that allows the car to operate without assistance from the driver (but the driver must supervise continuously and take control if there is an issue). Autopilot 2.0 also includes Enhanced Summon, which allows the car to navigate through a parking lot to come to you, without anyone in the driver's seat. Sentry mode, available on cars built after August 2017, is a feature which senses and records suspicious activity around the car.",
                             Name = "Tesla Model S",
-                            ShortDescription = "Electric five-door liftback sedan.",
-                            ThumbImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/teslamodelsthumb.jpg"
+                            ShortDescription = "The Tesla Model S is an all-electric five-door liftback sedan, produced by Tesla, Inc.",
+                            ThumbImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/teslamodelsorig.jpg"
                         },
                         new
                         {
@@ -191,7 +193,7 @@ namespace Car_Shop.Migrations
                             ImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/bmwi8orig.jpg",
                             LongDescription = "The i8 is part of BMW's electric fleet \"Project i\" being marketed as a new sub-brand, BMW i. The 2015 model year BMW i8 has a 7.1 kWh lithium-ion battery pack that delivers an all-electric range of 37 km (23 mi) under the New European Driving Cycle. Under the United States Environmental Protection Agency cycle, the range in EV mode is 24 km (15 mi) with a small amount of gasoline consumption. Its design is heavily influenced by the BMW M1 Homage concept car, which in turn pays homage to BMW's last production mid-engined sports car prior to the i8: the BMW M1. BMW will cease the production of the BMW i8 in April 2020.",
                             Name = "BMW I8",
-                            ShortDescription = "Sports car developed by BMW.",
+                            ShortDescription = "The BMW i8 is a plug-in hybrid sports car developed by BMW.",
                             ThumbImageUrl = "https://raw.githubusercontent.com/Altay1/asdasd/master/bmwi8thumb.jpg"
                         },
                         new
